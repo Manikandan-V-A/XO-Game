@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XO Game</title>
+    <link rel="stylesheet" href="XO_Game.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+        <video class="a123" src="./Back-xo.mp4" autoplay loop muted  ></video>
+    <video id="myVideo" class="a12" src="./Sco-Back.mp4"  style="z-index: 3; display: none; "></video>
+    <video id="myVideo1" class="a12" src="./Sub-Back.mp4"  style="z-index: 3; display: none; "></video>
+    <button class="last-btn" id="newButton" style="display: none; z-index: 6;"><a class="last-btn-a" href="./XO_Game.html">Restrat Game</a></button>
+   
+    <div class="container1" style="z-index: 2; position: relative;">
+        <div class="row" >
+            <div class="contact-left">
+
+
+                <div class="box">
+                    <input type="button" id="id1" class="xobox" onclick="handleClick1();handleClick0()"></input>
+                    <input type="button" id="id2" class="xobox" onclick="handleClick2();handleClick0()"></input>
+                    <input type="button" id="id3" class="xobox" onclick="handleClick3();handleClick0()"></input>
+                    <input type="button" id="id4" class="xobox" onclick="handleClick4();handleClick0()"></input>
+                    <input type="button" id="id5" class="xobox" onclick="handleClick5();handleClick0()"></input>
+                    <input type="button" id="id6" class="xobox" onclick="handleClick6();handleClick0()"></input>
+                    <input type="button" id="id7" class="xobox" onclick="handleClick7();handleClick0()"></input>
+                    <input type="button" id="id8" class="xobox" onclick="handleClick8();handleClick0()"></input>
+                    <input type="button" id="id9" class="xobox" onclick="handleClick9();handleClick0()"></input>
+                </div>
+
+            </div>
+            <div class="contact-center-main">
+                <div class="restart-center">
+                    <button class="restart-btn"><a href="./XO_Game.html"><i class="fa-solid fa-arrow-rotate-right"></i></a></button>
+                </div>
+            </div>
+            <div class="contact-right">
+
+                <div class="win">
+                    <h1 class="play-title">Game Details :</h1>
+                    <h1 class="play-detials">Player X : SCORPION </h1>
+                    <img src="./X.gif"  class="win-img">
+                    <h1 class="play-vs">VS</h1>
+                    <img src="./O.gif" class="win-img">
+                    <h1 class="play-detials">Player O : SUB-ZERO </h1>
+                    <h1 id="play3" class="play-detials"></h1>
+                    <!-- <audio controls autoplay>
+                        <source src="./asset/WhatsApp Audio 2024-03-30 at 12.57.17_86e4c9ab.mp3" class="audio"
+                            type="audio/ogg">
+                        <source src="./asset/WhatsApp Audio 2024-03-30 at 12.57.17_86e4c9ab.mp3" class="audio"
+                            type="audio/mpeg">
+                    </audio> -->
+                    <audio id="au1" autoplay>
+                        <source src="./squard 2.mp3 2.mp3" class="audio" type="audio/ogg">
+                        <source src="./squard 2.mp3" class="audio" type="audio/mpeg">
+                    </audio>
+                    <audio id="au2" autoplay>   
+                        <source src="./squard 2.mp3" class="audio" type="audio/ogg">
+                        <source src="./squard 2.mp3" class="audio" type="audio/mpeg">
+                    </audio>
+                </div>
+
+
+            </div>
+        </div>
+  
+    </div>
+
+    <script>
+
+        function handleClick0() {
+
+            var id11 = document.getElementById("id1").value;
+            var id12 = document.getElementById("id2").value;
+            var id13 = document.getElementById("id3").value;
+            var id14 = document.getElementById("id4").value;
+            var id15 = document.getElementById("id5").value;
+            var id16 = document.getElementById("id6").value;
+            var id17 = document.getElementById("id7").value;
+            var id18 = document.getElementById("id8").value;
+            var id19 = document.getElementById("id9").value;
+            if (id11 == 'X' && id12 == "X" && id13 == "X") {
+                var tt1 = document.getElementById("play3").value
+                document.getElementById("play3").innerHTML = "Player X : Winner"
+                document.getElementById("newButton").style.display ="block";
+                var video = document.getElementById("myVideo");
+                video.style.display = "block";
+                video.play();
+                document.getElementById("newButton").style.display ="block";
+
+            }
+            else if (id11 == 'O' && id12 == "O" && id13 == "O") {
+                var tt1 = document.getElementById("play3").value
+                document.getElementById("play3").innerHTML = "Player O : Winner"
+                var video1 = document.getElementById("myVideo1");
+                video1.style.display = "block";
+                video1.play();
+                document.getElementById("newButton").style.display ="block";
+            }
+            else if (id14 == 'X' && id15 == "X" && id16 == "X") {
+                var tt1 = document.getElementById("play3").value
+                document.getElementById("play3").innerHTML = "Player X : Winner"
+                var video = document.getElementById("myVideo");
+                video.style.display = "block";
+                video.play();
+                document.getElementById("newButton").style.display ="block";
+            }
+            else if (id14 == 'O' && id15 == "O" && id16 == "O") {
+                var tt1 = document.getElementById("play3").value
+                document.getElementById("play3").innerHTML = "Player O : Winner"
+                var video1 = document.getElementById("myVideo1");
+                video1.style.display = "block";
+                video1.play();
+                document.getElementById("newButton").style.display ="block";
+            }
+            else if (id17 == 'X' && id18 == "X" && id19 == "X") {
+                var tt1 = document.getElementById("play3").value
+                document.getElementById("play3").innerHTML = "Player X : Winner"
+                var video = document.getElementById("myVideo");
+                video.style.display = "block";
+                video.play();
+                document.getElementById("newButton").style.display ="block";
+            }
+            else if (id17 == 'O' && id18 == "O" && id19 == "O") {
+                var tt1 = document.getElementById("play3").value
+                document.getElementById("play3").innerHTML = "Player O : Winner"
+                var video1 = document.getElementById("myVideo1");
+                video1.style.display = "block";
+                video1.play();
+                document.getElementById("newButton").style.display ="block";
+            }
+            else if (id11 == 'X' && id14 == "X" && id17 == "X") {
+                var tt1 = document.getElementById("play3").value
+                document.getElementById("play3").innerHTML = "Player X : Winner"
+                var video = document.getElementById("myVideo");
+                video.style.display = "block";
+                video.play();
+                document.getElementById("newButton").style.display ="block";
+            }
+            else if (id11 == 'O' && id14 == "O" && id17 == "O") {
+                var tt1 = document.getElementById("play3").value
+                document.getElementById("play3").innerHTML = "Player O : Winner"
+                var video1 = document.getElementById("myVideo1");
+                video1.style.display = "block";
+                video1.play();
+                document.getElementById("newButton").style.display ="block";
+            }
+            else if (id12 == 'X' && id15 == "X" && id18 == "X") {
+                var tt1 = document.getElementById("play3").value
+                document.getElementById("play3").innerHTML = "Player X : Winner"
+                var video = document.getElementById("myVideo");
+                video.style.display = "block";
+                video.play();
+                document.getElementById("newButton").style.display ="block";
+            }
+            else if (id12 == 'O' && id15 == "O" && id18 == "O") {
+                var tt1 = document.getElementById("play3").value
+                document.getElementById("play3").innerHTML = "Player O : Winner"
+                var video1 = document.getElementById("myVideo1");
+                video1.style.display = "block";
+                video1.play();
+                document.getElementById("newButton").style.display ="block";
+            }
+            else if (id13 == 'X' && id16 == "X" && id19 == "X") {
+                var tt1 = document.getElementById("play3").value
+                document.getElementById("play3").innerHTML = "Player X : Winner"
+                var video = document.getElementById("myVideo");
+                video.style.display = "block";
+                video.play();
+                document.getElementById("newButton").style.display ="block";
+            }
+            else if (id13 == 'O' && id16 == "O" && id19 == "O") {
+                var tt1 = document.getElementById("play3").value
+                document.getElementById("play3").innerHTML = "Player O : Winner"
+                var video1 = document.getElementById("myVideo1");
+                video1.style.display = "block";
+                video1.play();
+                document.getElementById("newButton").style.display ="block";
+            }
+            else if (id11 == 'X' && id15 == "X" && id19 == "X") {
+                var tt1 = document.getElementById("play3").value
+                document.getElementById("play3").innerHTML = "Player X : Winner"
+                var video = document.getElementById("myVideo");
+                video.style.display = "block";
+                video.play();
+                document.getElementById("newButton").style.display ="block";
+            }
+            else if (id11 == 'O' && id15 == "O" && id19 == "O") {
+                var tt1 = document.getElementById("play3").value
+                document.getElementById("play3").innerHTML = "Player O : Winner"
+                var video1 = document.getElementById("myVideo1");
+                video1.style.display = "block";
+                video1.play();
+                document.getElementById("newButton").style.display ="block";
+            }
+            else if (id13 == 'X' && id15 == "X" && id17 == "X") {
+                var tt1 = document.getElementById("play3").value
+                document.getElementById("play3").innerHTML = "Player X : Winner"
+                var video = document.getElementById("myVideo");
+                video.style.display = "block";
+                video.play();
+                document.getElementById("newButton").style.display ="block";
+            }
+            else if (id13 == 'O' && id15 == "O" && id17 == "O") {
+                var tt1 = document.getElementById("play3").value
+                document.getElementById("play3").innerHTML = "Player O : Winner"
+                var video1 = document.getElementById("myVideo1");
+                video1.style.display = "block";
+                video1.play();
+                document.getElementById("newButton").style.display ="block";
+            }
+            //   else if (1){
+            //     var tt1=document.getElementById("play3").value
+            //        document.getElementById("play3").innerHTML="Player O : W"
+            //   }
+
+        }
+
+
+        var pt1 = 1;
+        function handleClick1() {
+            // var pt1=(prompt("Enter Number"));
+
+            if (pt1 == 1) {
+                var id11 = document.getElementById("id1").value;
+                document.getElementById("id1").value = "X";
+                var imageButton = document.getElementById("id1");
+                imageButton.style.backgroundImage = "url(./X.gif)";
+                document.getElementById("id1").style.color = "white";
+                var audio = document.getElementById("au1");
+                audio.play();
+                // document.getElementById("id1").style.backgroundColor="black";
+                pt1 = 0
+            }
+            else {
+                document.getElementById("id1").value = "O";
+                var imageButton = document.getElementById("id1");
+                imageButton.style.backgroundImage = "url(./O.gif)";
+                var audio = document.getElementById("au2");
+                audio.play();
+                document.getElementById("id1").style.color = "white";
+                document.getElementById("id1").style.backgroundColor = "white";
+                pt1 = 1
+            }
+        }
+        function handleClick2() {
+            // var pt1=(prompt("Enter Number"));
+            if (pt1 == 1) {
+                var id12 = document.getElementById("id2").value;
+                document.getElementById("id2").value = "X";
+                var imageButton = document.getElementById("id2");
+                imageButton.style.backgroundImage = "url(./X.gif)";
+                var audio = document.getElementById("au1");
+                audio.play();
+                document.getElementById("id2").style.color = "white";
+                // document.getElementById("id2").style.backgroundColor="black";
+                pt1 = 0
+            }
+            else {
+                document.getElementById("id2").value = "O";
+                var imageButton = document.getElementById("id2");
+                imageButton.style.backgroundImage = "url(./O.gif)";
+                var audio = document.getElementById("au2");
+                audio.play();
+                document.getElementById("id2").style.color = "white";
+                document.getElementById("id2").style.backgroundColor = "rgba(255, 255, 255, 0.438)";
+                pt1 = 1
+            }
+        }
+        function handleClick3() {
+            // var pt1=(prompt("Enter Number"));
+            if (pt1 == 1) {
+                var id13 = document.getElementById("id3").value;
+                document.getElementById("id3").value = "X";
+                var imageButton = document.getElementById("id3");
+                imageButton.style.backgroundImage = "url(./X.gif)";
+                var audio = document.getElementById("au1");
+                audio.play();
+                document.getElementById("id3").style.color = "white";
+                document.getElementById("id3").style.backgroundColor = "black";
+                pt1 = 0
+            }
+            else {
+                document.getElementById("id3").value = "O";
+                var imageButton = document.getElementById("id3");
+                imageButton.style.backgroundImage = "url(./O.gif)";
+                var audio = document.getElementById("au2");
+                audio.play();
+                document.getElementById("id3").style.color = "white";
+                document.getElementById("id3").style.backgroundColor = "rgba(255, 255, 255, 0.438)";
+                pt1 = 1
+            }
+        }
+        function handleClick4() {
+            // var pt1=(prompt("Enter Number"));
+            if (pt1 == 1) {
+                var id14 = document.getElementById("id4").value;
+                document.getElementById("id4").value = "X";
+                var imageButton = document.getElementById("id4");
+                imageButton.style.backgroundImage = "url(./X.gif)";
+                var audio = document.getElementById("au1");
+                audio.play();
+                document.getElementById("id4").style.color = "white";
+                document.getElementById("id4").style.backgroundColor = "black";
+                pt1 = 0
+            }
+            else {
+                document.getElementById("id4").value = "O";
+                var imageButton = document.getElementById("id4");
+                imageButton.style.backgroundImage = "url(./O.gif)";
+                var audio = document.getElementById("au2");
+                audio.play();
+                document.getElementById("id4").style.color = "white";
+                document.getElementById("id4").style.backgroundColor = "rgba(255, 255, 255, 0.438)";
+                pt1 = 1
+            }
+        }
+        function handleClick5() {
+            // var pt1=(prompt("Enter Number"));
+            if (pt1 == 1) {
+                var id15 = document.getElementById("id5").value;
+                document.getElementById("id5").value = "X";
+                var imageButton = document.getElementById("id5");
+                imageButton.style.backgroundImage = "url(./X.gif)";
+                var audio = document.getElementById("au1");
+                audio.play();
+                document.getElementById("id5").style.color = "white";
+                document.getElementById("id5").style.backgroundColor = "black";
+                pt1 = 0
+            }
+            else {
+                document.getElementById("id5").value = "O";
+                var imageButton = document.getElementById("id5");
+                imageButton.style.backgroundImage = "url(./O.gif)";
+                var audio = document.getElementById("au2");
+                audio.play();
+                document.getElementById("id5").style.color = "white";
+                document.getElementById("id5").style.backgroundColor = "rgba(255, 255, 255, 0.438)";
+                pt1 = 1
+            }
+        }
+        function handleClick6() {
+            // var pt1=(prompt("Enter Number"));
+            if (pt1 == 1) {
+                var id16 = document.getElementById("id6").value;
+                document.getElementById("id6").value = "X";
+                var imageButton = document.getElementById("id6");
+                imageButton.style.backgroundImage = "url(./X.gif)";
+                var audio = document.getElementById("au1");
+                audio.play();
+                document.getElementById("id6").style.color = "white";
+                document.getElementById("id6").style.backgroundColor = "black";
+                pt1 = 0
+            }
+            else {
+                document.getElementById("id6").value = "O";
+                var imageButton = document.getElementById("id6");
+                imageButton.style.backgroundImage = "url(./O.gif)";
+                var audio = document.getElementById("au2");
+                audio.play();
+                document.getElementById("id6").style.color = "white";
+                document.getElementById("id6").style.backgroundColor = "rgba(255, 255, 255, 0.438)";
+                pt1 = 1
+            }
+        }
+        function handleClick7() {
+            // var pt1=(prompt("Enter Number"));
+            if (pt1 == 1) {
+                var id17 = document.getElementById("id7").value;
+                document.getElementById("id7").value = "X";
+                var imageButton = document.getElementById("id7");
+                imageButton.style.backgroundImage = "url(./X.gif)";
+                var audio = document.getElementById("au1");
+                audio.play();
+                document.getElementById("id7").style.color = "white";
+                document.getElementById("id7").style.backgroundColor = "black";
+                pt1 = 0
+            }
+            else {
+                document.getElementById("id7").value = "O";
+                var imageButton = document.getElementById("id7");
+                imageButton.style.backgroundImage = "url(./O.gif)";
+                var audio = document.getElementById("au2");
+                audio.play();
+                document.getElementById("id7").style.color = "white";
+                document.getElementById("id7").style.backgroundColor = "rgba(255, 255, 255, 0.438)";
+                pt1 = 1
+            }
+        }
+        function handleClick8() {
+            // var pt1=(prompt("Enter Number"));
+            if (pt1 == 1) {
+                var id18 = document.getElementById("id8").value;
+                document.getElementById("id8").value = "X";
+                var imageButton = document.getElementById("id8");
+                imageButton.style.backgroundImage = "url(./X.gif)";
+                var audio = document.getElementById("au1");
+                audio.play();
+                document.getElementById("id8").style.color = "white";
+                document.getElementById("id8").style.backgroundColor = "black";
+                pt1 = 0
+            }
+            else {
+                document.getElementById("id8").value = "O";
+                var imageButton = document.getElementById("id8");
+                imageButton.style.backgroundImage = "url(./O.gif)";
+                var audio = document.getElementById("au2");
+                audio.play();
+                document.getElementById("id8").style.color = "white";
+                document.getElementById("id8").style.backgroundColor = "rgba(255, 255, 255, 0.438)";
+                pt1 = 1
+            }
+        }
+        function handleClick9() {
+            // var pt1=(prompt("Enter Number"));
+            if (pt1 == 1) {
+                var id19 = document.getElementById("id9").value;
+                document.getElementById("id9").value = "X";
+                var imageButton = document.getElementById("id9");
+                imageButton.style.backgroundImage = "url(./X.gif)";
+                var audio = document.getElementById("au1");
+                audio.play();
+                document.getElementById("id9").style.color = "white";
+                document.getElementById("id9").style.backgroundColor = "black";
+                pt1 = 0
+            }
+            else {
+                document.getElementById("id9").value = "O";
+                var imageButton = document.getElementById("id9");
+                imageButton.style.backgroundImage = "url(./O.gif)";
+                var audio = document.getElementById("au2");
+                audio.play();
+                document.getElementById("id9").style.color = "white";
+                document.getElementById("id9").style.backgroundColor = "rgba(255, 255, 255, 0.438)";
+                pt1 = 1
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

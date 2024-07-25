@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color:red;
+} */
+.a1{
+    height: 100vh;
+    /* overflow: hidden; */
+    /* background-color: aqua; */
+}
+video{
+    position: fixed;
+    z-index: -1;
+}
+a{
+    text-decoration: none;
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+h1{
+    position: absolute;
+    z-index: 1100;
+    font-size: 500%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background-size: cover;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; */
+}
+.Sco{
+    top: 75%;
+    left: 12%;
+    color: #ffffff5e;
+    /* background-image: url(./sfkfLZ.gif); */
+}
+.Sub{
+    top: 65%;
+    left: 59%;
+    color: rgba(255, 255, 255, 0.582);
+    /* background-image: url(./source.gif); */
+}
+.Vs{
+    top: 75%;
+    left: 47%;
+    background-image: url(./source.gif);
+}
+img{
+    position: absolute;
+    z-index: 1100;
+    top: 20%;
+    left: 50%;
+    height: 200px;
+    width: 400px;
+}
+button{
+    position: absolute;
+    z-index: 1000;
+    height: 100px;
+    width: 200px;
+    border-radius: 10px;
+    top: 40%;
+    left: 45%;
+    background-image: url(./mortal-kombat-mk11.gif);
+    background-size: cover;
+
+    /* font-size: 100px; */
+    color: aqua;
+
+}
+@media (max-width: 1100px) {
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vh; /* Use 100vh to cover the full screen height */
+        height: 100vw; /* Use 100vw to cover the full screen width */
+        transform: translate(-50%, -50%) rotate(90deg);
+        object-fit: cover;
+    }
+    button{ 
+        position: absolute;
+        z-index: 0;
+        top: 50%;
+        left: 50%;
+        width: 15vh; /* Use 100vh to cover the full screen height */
+        height: 15vw; /* Use 100vw to cover the full screen width */
+        transform: translate(-50%, -50%) rotate(90deg);
+        object-fit: cover;
+    }
+    h1{ 
+        font-size: 50px;
+        top: 25%;
+        left: 25%;
+        transform: translate(-50%, -50%) rotate(90deg);
+        object-fit: cover;
+    }
+    h1 .Sub{
+        top: 50%;
+        left: 50%;
+        background-image: url(./source.gif);
+        background-size: cover;
+        background-position: center;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+    a{
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bolder;
+        color: rgba(255, 255, 255, 0.856);
+    }
+    img{
+        height: 7%;
+        width: 27%;
+        top: 49%;
+        left: 90%;
+        transform: translate(-50%, -50%) rotate(90deg);
+        object-fit: cover;
+    }
+}
+

@@ -1,0 +1,278 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 65%;
+    width: 80%;
+    /* background-color: chartreuse; */
+}
+
+.row {
+    height: 95vh;
+}
+
+.xobox {
+    height: 25%;
+    width: 30%;
+    border-radius: 10px;
+    border: none;
+    margin-left: 5px;
+    margin-top: 0px;
+    border: 1px solid #fffefe2a;
+    background-color: rgba(0, 0, 0, 0.644);
+    background-size: cover;
+
+}
+
+.xobox:hover {
+    border: 1px solid #000000;
+    background-color: rgba(250, 250, 250, 0.514);
+}
+
+#id1,
+#id2,
+#id3,
+#id4,
+#id5,
+#id6,
+#id7,
+#id8,
+#id9 {
+    background-size: cover;
+    font-size: 78px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.contact-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 45%;
+}
+
+.contact-right {
+    flex-basis: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin-left: 3%;
+    height: 100%;
+    /* background-color: rgba(255, 0, 0, 0.623); */
+}
+
+.win {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.644);
+    border-radius: 10%;
+    height: 60%;
+    width: 80%;
+}
+
+.contact-center-main {
+    flex-basis: 15%;
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.restart-center {
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50%;
+    width: 90%;
+}
+
+.restart-btn {
+    background-image: url(./btn.gif);
+    background-size: cover;
+    height: 40%;
+    width: 80%;
+    color: #ababab;
+    border: none;
+    border-radius: 100%;
+}
+
+.restart-btn a {
+    color: rgba(255, 255, 255, 0.603);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.contact-left {
+    margin-top: 0px;
+}
+
+.container1 {
+    height: 100vh;
+    /* width: 100vb; */
+    padding: 10px 2%;
+    /* background: linear-gradient(#00aeff04,#ffd00041,#ffd0000a); */
+    /* background-color: aqua; */
+}
+
+.a12 {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: normal;
+
+}
+a.last-btn-a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+.last-btn {
+    position: absolute;
+    opacity: normal;
+    height: 100px;
+    width: 200px;
+    border-radius: 10px;
+    top: 75%;
+    left: 5%;
+    background-image: url(./mortal-kombat-mk11.gif);
+    background-size: cover;
+}
+
+.win-img {
+    height: 100px;
+    width: 150px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.play-title {
+    color: rgba(255, 255, 255, 0.719);
+}
+
+.play-detials {
+    color: rgba(255, 255, 255, 0.658);
+}
+
+.play-vs {
+    color: rgba(255, 255, 255, 0.658);
+}
+
+.a123 {
+    right: 0;
+    /* left: 0; */
+    bottom: 0;
+    position: absolute;
+    z-index: 0;
+    opacity: normal;
+
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .a123 {
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .a123 {
+        width: auto;
+        height: 100%;
+
+    }
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .a12 {
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .a12 {
+        width: auto;
+        height: 100%;
+
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    a.last-btn-a{
+        font-size: 15px;
+    }
+    .last-btn {
+        height: 80px;
+        width: 150px;
+        border-radius: 10px;
+        top: 65%;
+        left: 5%;
+    }
+
+    .xobox {
+        height: 27%;
+        width: 30%;
+        border-radius: 5px;
+    }
+
+    .box {
+        height: 80%;
+        /* width: 20; */
+    }
+
+    .play-title {
+        font-size: 25px;
+
+    }
+
+    .play-detials {
+        font-size: 20px;
+    }
+
+    .play-vs {
+        font-size: 15px;
+    }
+
+    .win-img {
+        height: 25%;
+        width: 35%;
+        margin: 5px;
+        border-radius: 10px;
+    }
+
+    .win {
+        height: 70%;
+        width: 90%;
+    }
+
+    #id1,
+    #id2,
+    #id3,
+    #id4,
+    #id5,
+    #id6,
+    #id7,
+    #id8,
+    #id9 {
+        font-size: 45px;
+    }
+
+}
