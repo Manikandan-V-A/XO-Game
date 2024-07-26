@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XO Game</title>
-    <link rel="stylesheet" href="style-page-2.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style-page-2.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -15,65 +15,66 @@
 </head>
 
 <body>
-        <video class="a123" src="./Back-xo.mp4" autoplay loop muted  ></video>
+    <!-- <div class="a1"> -->
+    <video src="./Back-xo.mp4" loop autoplay controls muted></video>
     <video id="myVideo" class="a12" src="./Sco-Back.mp4"  style="z-index: 3; display: none; "></video>
     <video id="myVideo1" class="a12" src="./Sub-Back.mp4"  style="z-index: 3; display: none; "></video>
     <button class="last-btn" id="newButton" style="display: none; z-index: 6;"><a class="last-btn-a" href="./index-page-2.html">Restrat Game</a></button>
-   
-    <div class="container1" style="z-index: 2; position: relative;">
-        <div class="row" >
-            <div class="contact-left">
+    <!-- </div> -->
 
+    <div class="main-main">
+        <div class="main">
+            <div class="row">
+                <div class="box1">
 
-                <div class="box">
-                    <input type="button" id="id1" class="xobox" onclick="handleClick1();handleClick0()"></input>
-                    <input type="button" id="id2" class="xobox" onclick="handleClick2();handleClick0()"></input>
-                    <input type="button" id="id3" class="xobox" onclick="handleClick3();handleClick0()"></input>
-                    <input type="button" id="id4" class="xobox" onclick="handleClick4();handleClick0()"></input>
-                    <input type="button" id="id5" class="xobox" onclick="handleClick5();handleClick0()"></input>
-                    <input type="button" id="id6" class="xobox" onclick="handleClick6();handleClick0()"></input>
-                    <input type="button" id="id7" class="xobox" onclick="handleClick7();handleClick0()"></input>
-                    <input type="button" id="id8" class="xobox" onclick="handleClick8();handleClick0()"></input>
-                    <input type="button" id="id9" class="xobox" onclick="handleClick9();handleClick0()"></input>
+                    <div class="box">
+                        <input type="button" id="id1" class="xobox" onclick="handleClick1();handleClick0()"></input>
+                        <input type="button" id="id2" class="xobox" onclick="handleClick2();handleClick0()"></input>
+                        <input type="button" id="id3" class="xobox" onclick="handleClick3();handleClick0()"></input>
+                        <input type="button" id="id4" class="xobox" onclick="handleClick4();handleClick0()"></input>
+                        <input type="button" id="id5" class="xobox" onclick="handleClick5();handleClick0()"></input>
+                        <input type="button" id="id6" class="xobox" onclick="handleClick6();handleClick0()"></input>
+                        <input type="button" id="id7" class="xobox" onclick="handleClick7();handleClick0()"></input>
+                        <input type="button" id="id8" class="xobox" onclick="handleClick8();handleClick0()"></input>
+                        <input type="button" id="id9" class="xobox" onclick="handleClick9();handleClick0()"></input>
+                    </div>
+
                 </div>
-
-            </div>
-            <div class="contact-center-main">
-                <div class="restart-center">
-                    <button class="restart-btn"><a href="./index-page-2.html"><i class="fa-solid fa-arrow-rotate-right"></i></a></button>
+                <div class="box2">
+                    <div class="restart-center">
+                        <button class="restart-btn"><a href="./index-page-2.html"><i class="fa-solid fa-arrow-rotate-right"></i></a></button>
+                    </div>
                 </div>
-            </div>
-            <div class="contact-right">
+                <div class="box3">
 
-                <div class="win">
-                    <h1 class="play-title">Game Details :</h1>
-                    <h1 class="play-detials">Player X : SCORPION </h1>
-                    <img src="./X.gif"  class="win-img">
-                    <h1 class="play-vs">VS</h1>
-                    <img src="./O.gif" class="win-img">
-                    <h1 class="play-detials">Player O : SUB-ZERO </h1>
-                    <h1 id="play3" class="play-detials"></h1>
-                    <!-- <audio controls autoplay>
-                        <source src="./asset/WhatsApp Audio 2024-03-30 at 12.57.17_86e4c9ab.mp3" class="audio"
-                            type="audio/ogg">
-                        <source src="./asset/WhatsApp Audio 2024-03-30 at 12.57.17_86e4c9ab.mp3" class="audio"
-                            type="audio/mpeg">
-                    </audio> -->
-                    <audio id="au1" autoplay>
-                        <source src="./squard 2.mp3 2.mp3" class="audio" type="audio/ogg">
-                        <source src="./squard 2.mp3" class="audio" type="audio/mpeg">
-                    </audio>
-                    <audio id="au2" autoplay>   
-                        <source src="./squard 2.mp3" class="audio" type="audio/ogg">
-                        <source src="./squard 2.mp3" class="audio" type="audio/mpeg">
-                    </audio>
+                    <div class="win">
+                        <h1 class="play-title">Game Details :</h1>
+                        <h1 class="play-detials">Player X : SCORPION </h1>
+                        <img src="./asset/209473.gif"  class="win-img">
+                        <h1 class="play-vs">VS</h1>
+                        <img src="./asset/518232f0f9633e0f4616acb1f2b6f67c.gif" class="win-img">
+                        <h1 class="play-detials">Player O : SUB-ZERO </h1>
+                        <h1 id="play3" class="play-detials"></h1>
+
+                        <audio id="au1" autoplay>
+                            <source src="./asset/squard 2.mp3" class="audio" type="audio/ogg">
+                            <source src="./asset/squard 2.mp3" class="audio" type="audio/mpeg">
+                        </audio>
+                        <audio id="au2" autoplay>   
+                            <source src="./asset/squard 2.mp3" class="audio" type="audio/ogg">
+                            <source src="./asset/squard 2.mp3" class="audio" type="audio/mpeg">
+                        </audio>
+                    </div>
+
                 </div>
-
-
             </div>
         </div>
-  
     </div>
+
+
+
+
+
 
     <script>
 
@@ -91,7 +92,7 @@
             if (id11 == 'X' && id12 == "X" && id13 == "X") {
                 var tt1 = document.getElementById("play3").value
                 document.getElementById("play3").innerHTML = "Player X : Winner"
-                document.getElementById("newButton").style.display ="block";
+                // document.getElementById("newButton").style.display ="block";
                 var video = document.getElementById("myVideo");
                 video.style.display = "block";
                 video.play();
@@ -234,7 +235,7 @@
                 var id11 = document.getElementById("id1").value;
                 document.getElementById("id1").value = "X";
                 var imageButton = document.getElementById("id1");
-                imageButton.style.backgroundImage = "url(./X.gif)";
+                imageButton.style.backgroundImage = "url(./asset/209473.gif)";
                 document.getElementById("id1").style.color = "white";
                 var audio = document.getElementById("au1");
                 audio.play();
@@ -244,7 +245,7 @@
             else {
                 document.getElementById("id1").value = "O";
                 var imageButton = document.getElementById("id1");
-                imageButton.style.backgroundImage = "url(./O.gif)";
+                imageButton.style.backgroundImage = "url(./asset/518232f0f9633e0f4616acb1f2b6f67c.gif)";
                 var audio = document.getElementById("au2");
                 audio.play();
                 document.getElementById("id1").style.color = "white";
@@ -258,7 +259,7 @@
                 var id12 = document.getElementById("id2").value;
                 document.getElementById("id2").value = "X";
                 var imageButton = document.getElementById("id2");
-                imageButton.style.backgroundImage = "url(./X.gif)";
+                imageButton.style.backgroundImage = "url(./asset/209473.gif)";
                 var audio = document.getElementById("au1");
                 audio.play();
                 document.getElementById("id2").style.color = "white";
@@ -268,7 +269,7 @@
             else {
                 document.getElementById("id2").value = "O";
                 var imageButton = document.getElementById("id2");
-                imageButton.style.backgroundImage = "url(./O.gif)";
+                imageButton.style.backgroundImage = "url(./asset/518232f0f9633e0f4616acb1f2b6f67c.gif)";
                 var audio = document.getElementById("au2");
                 audio.play();
                 document.getElementById("id2").style.color = "white";
@@ -282,7 +283,7 @@
                 var id13 = document.getElementById("id3").value;
                 document.getElementById("id3").value = "X";
                 var imageButton = document.getElementById("id3");
-                imageButton.style.backgroundImage = "url(./X.gif)";
+                imageButton.style.backgroundImage = "url(./asset/209473.gif)";
                 var audio = document.getElementById("au1");
                 audio.play();
                 document.getElementById("id3").style.color = "white";
@@ -292,7 +293,7 @@
             else {
                 document.getElementById("id3").value = "O";
                 var imageButton = document.getElementById("id3");
-                imageButton.style.backgroundImage = "url(./O.gif)";
+                imageButton.style.backgroundImage = "url(./asset/518232f0f9633e0f4616acb1f2b6f67c.gif)";
                 var audio = document.getElementById("au2");
                 audio.play();
                 document.getElementById("id3").style.color = "white";
@@ -306,7 +307,7 @@
                 var id14 = document.getElementById("id4").value;
                 document.getElementById("id4").value = "X";
                 var imageButton = document.getElementById("id4");
-                imageButton.style.backgroundImage = "url(./X.gif)";
+                imageButton.style.backgroundImage = "url(./asset/209473.gif)";
                 var audio = document.getElementById("au1");
                 audio.play();
                 document.getElementById("id4").style.color = "white";
@@ -316,7 +317,7 @@
             else {
                 document.getElementById("id4").value = "O";
                 var imageButton = document.getElementById("id4");
-                imageButton.style.backgroundImage = "url(./O.gif)";
+                imageButton.style.backgroundImage = "url(./asset/518232f0f9633e0f4616acb1f2b6f67c.gif)";
                 var audio = document.getElementById("au2");
                 audio.play();
                 document.getElementById("id4").style.color = "white";
@@ -330,7 +331,7 @@
                 var id15 = document.getElementById("id5").value;
                 document.getElementById("id5").value = "X";
                 var imageButton = document.getElementById("id5");
-                imageButton.style.backgroundImage = "url(./X.gif)";
+                imageButton.style.backgroundImage = "url(./asset/209473.gif)";
                 var audio = document.getElementById("au1");
                 audio.play();
                 document.getElementById("id5").style.color = "white";
@@ -340,7 +341,7 @@
             else {
                 document.getElementById("id5").value = "O";
                 var imageButton = document.getElementById("id5");
-                imageButton.style.backgroundImage = "url(./O.gif)";
+                imageButton.style.backgroundImage = "url(./asset/518232f0f9633e0f4616acb1f2b6f67c.gif)";
                 var audio = document.getElementById("au2");
                 audio.play();
                 document.getElementById("id5").style.color = "white";
@@ -354,7 +355,7 @@
                 var id16 = document.getElementById("id6").value;
                 document.getElementById("id6").value = "X";
                 var imageButton = document.getElementById("id6");
-                imageButton.style.backgroundImage = "url(./X.gif)";
+                imageButton.style.backgroundImage = "url(./asset/209473.gif)";
                 var audio = document.getElementById("au1");
                 audio.play();
                 document.getElementById("id6").style.color = "white";
@@ -364,7 +365,7 @@
             else {
                 document.getElementById("id6").value = "O";
                 var imageButton = document.getElementById("id6");
-                imageButton.style.backgroundImage = "url(./O.gif)";
+                imageButton.style.backgroundImage = "url(./asset/518232f0f9633e0f4616acb1f2b6f67c.gif)";
                 var audio = document.getElementById("au2");
                 audio.play();
                 document.getElementById("id6").style.color = "white";
@@ -378,7 +379,7 @@
                 var id17 = document.getElementById("id7").value;
                 document.getElementById("id7").value = "X";
                 var imageButton = document.getElementById("id7");
-                imageButton.style.backgroundImage = "url(./X.gif)";
+                imageButton.style.backgroundImage = "url(./asset/209473.gif)";
                 var audio = document.getElementById("au1");
                 audio.play();
                 document.getElementById("id7").style.color = "white";
@@ -388,7 +389,7 @@
             else {
                 document.getElementById("id7").value = "O";
                 var imageButton = document.getElementById("id7");
-                imageButton.style.backgroundImage = "url(./O.gif)";
+                imageButton.style.backgroundImage = "url(./asset/518232f0f9633e0f4616acb1f2b6f67c.gif)";
                 var audio = document.getElementById("au2");
                 audio.play();
                 document.getElementById("id7").style.color = "white";
@@ -402,7 +403,7 @@
                 var id18 = document.getElementById("id8").value;
                 document.getElementById("id8").value = "X";
                 var imageButton = document.getElementById("id8");
-                imageButton.style.backgroundImage = "url(./X.gif)";
+                imageButton.style.backgroundImage = "url(./asset/209473.gif)";
                 var audio = document.getElementById("au1");
                 audio.play();
                 document.getElementById("id8").style.color = "white";
@@ -412,7 +413,7 @@
             else {
                 document.getElementById("id8").value = "O";
                 var imageButton = document.getElementById("id8");
-                imageButton.style.backgroundImage = "url(./O.gif)";
+                imageButton.style.backgroundImage = "url(./asset/518232f0f9633e0f4616acb1f2b6f67c.gif)";
                 var audio = document.getElementById("au2");
                 audio.play();
                 document.getElementById("id8").style.color = "white";
@@ -426,7 +427,7 @@
                 var id19 = document.getElementById("id9").value;
                 document.getElementById("id9").value = "X";
                 var imageButton = document.getElementById("id9");
-                imageButton.style.backgroundImage = "url(./X.gif)";
+                imageButton.style.backgroundImage = "url(./asset/209473.gif)";
                 var audio = document.getElementById("au1");
                 audio.play();
                 document.getElementById("id9").style.color = "white";
@@ -436,7 +437,7 @@
             else {
                 document.getElementById("id9").value = "O";
                 var imageButton = document.getElementById("id9");
-                imageButton.style.backgroundImage = "url(./O.gif)";
+                imageButton.style.backgroundImage = "url(./asset/518232f0f9633e0f4616acb1f2b6f67c.gif)";
                 var audio = document.getElementById("au2");
                 audio.play();
                 document.getElementById("id9").style.color = "white";
@@ -447,6 +448,10 @@
 
     </script>
 
+
+
+
+    
 </body>
 
 </html>
