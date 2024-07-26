@@ -1,24 +1,80 @@
-* {
+*{
     margin: 0px;
     padding: 0px;
 }
+
+.a1{
+    height: 100vh;
+}
+video{
+    position: fixed;
+    z-index: -1;
+}
+/* .a12{
+    position: fixed;
+    z-index: 1000;
+} */
+.main-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+.main{
+    /* background-color: rgba(19, 185, 130, 0.384); */
+    padding: 10px 5%;
+    width: 100%;
+    height: 50%;
+}
+.row{
+    height: 100%;
+}
+/* ------------------ 3 Main Box ------------------- */
+
+
+.box1{
+    flex-basis: 45%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box2{
+    flex-basis: 20%;
+    /* background-color: rgb(55, 0, 255); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box3{
+    flex-basis: 35%;
+    /* background-color: rgb(43, 255, 0); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+/* --------------------xo box----------------- */
 
 .box {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 65%;
-    width: 80%;
-    /* background-color: chartreuse; */
-}
-
-.row {
-    height: 95vh;
+    height: 90%;
+    width: 90%;
+    /* background-color: rgb(0, 195, 255); */
 }
 
 .xobox {
-    height: 25%;
+    height: 32%;
     width: 30%;
     border-radius: 10px;
     border: none;
@@ -26,6 +82,7 @@
     margin-top: 0px;
     border: 1px solid #fffefe2a;
     background-color: rgba(0, 0, 0, 0.644);
+    /* background-color: blue; */
     background-size: cover;
 
 }
@@ -50,47 +107,10 @@
     font-weight: bold;
 }
 
-.contact-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-basis: 45%;
-}
 
-.contact-right {
-    flex-basis: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    border-radius: 10px;
-    margin-left: 3%;
-    height: 100%;
-    /* background-color: rgba(255, 0, 0, 0.623); */
-}
+/* -------------------------- Restart btn ---------------------------- */
 
-.win {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.644);
-    border-radius: 10%;
-    height: 60%;
-    width: 80%;
-}
-
-.contact-center-main {
-    flex-basis: 15%;
-    /* background-color: rgb(255, 0, 0); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.restart-center {
+.restart-center{
     /* background-color: aquamarine; */
     display: flex;
     justify-content: center;
@@ -101,13 +121,21 @@
 }
 
 .restart-btn {
-    background-image: url(./btn.gif);
+    background-image: url(./mortal-kombat-mk11.gif);
     background-size: cover;
-    height: 40%;
+    height: 50%;
     width: 80%;
     color: #ababab;
     border: none;
-    border-radius: 100%;
+    border-radius: 10px;
+
+    /* background-image: url(./asset/btn.gif);
+    background-size: cover;
+    height: 60%;
+    width: 50%;
+    color: #ababab;
+    border: none;
+    border-radius: 100%; */
 }
 
 .restart-btn a {
@@ -116,25 +144,41 @@
     text-decoration: none;
 }
 
-.contact-left {
-    margin-top: 0px;
+
+/* -------------------------- Players details --------------------------- */
+
+.win {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.644);
+    border-radius: 20px;
+    height: 90%;
+    width: 70%;
 }
 
-.container1 {
-    height: 100vh;
-    /* width: 100vb; */
-    padding: 10px 2%;
-    /* background: linear-gradient(#00aeff04,#ffd00041,#ffd0000a); */
-    /* background-color: aqua; */
+.win-img {
+    height: 20%;
+    width: 25%;
+    margin: 5px;
+    border-radius: 10px;
 }
 
-.a12 {
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    opacity: normal;
-
+.play-title {
+    color: rgba(255, 255, 255, 0.719);
 }
+
+.play-detials {
+    color: rgba(255, 255, 255, 0.658);
+}
+
+.play-vs {
+    color: rgba(255, 255, 255, 0.658);
+}
+
+/* ------------------- Responsiveness ------------------------   */
+
 a.last-btn-a{
     text-decoration: none;
     font-size: 20px;
@@ -154,125 +198,80 @@ a.last-btn-a{
     background-size: cover;
 }
 
-.win-img {
-    height: 100px;
-    width: 150px;
-    margin: 5px;
-    border-radius: 10px;
-}
 
-.play-title {
-    color: rgba(255, 255, 255, 0.719);
-}
-
-.play-detials {
-    color: rgba(255, 255, 255, 0.658);
-}
-
-.play-vs {
-    color: rgba(255, 255, 255, 0.658);
-}
-
-.a123 {
-    right: 0;
-    /* left: 0; */
-    bottom: 0;
-    position: absolute;
-    z-index: 0;
-    opacity: normal;
-
-}
-
-@media (min-aspect-ratio: 16/9) {
-    .a123 {
-        width: 100%;
-        height: auto;
-
+@media (max-width: 1100px) {
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vh; /* Use 100vh to cover the full screen height */
+        height: 100vw; /* Use 100vw to cover the full screen width */
+        transform: translate(-50%, -50%) rotate(90deg);
+        object-fit: cover;
     }
-}
-
-@media (max-aspect-ratio: 16/9) {
-    .a123 {
-        width: auto;
-        height: 100%;
-
+    /* button{ 
+        position: absolute;
+        z-index: 0;
+        top: 50%;
+        left: 50%;
+        width: 15vh; 
+        height: 15vw;
+        transform: translate(-50%, -50%) rotate(90deg);
+        object-fit: cover;
+    } */
+    .main{
+        position: absolute;
+        z-index: 0;
+        padding: 10px 10%;
+        transform: translate(-50%, -50%) rotate(90deg);
+        object-fit: cover;
+        top: 50%;
+        left: 50%;
+        width: 100vh; /* Use 100vh to cover the full screen height */
+        height: 100vw; /* Use 100vw to cover the full screen width */
     }
-}
-
-@media (min-aspect-ratio: 16/9) {
-    .a12 {
-        width: 100%;
-        height: auto;
-
-    }
-}
-
-@media (max-aspect-ratio: 16/9) {
-    .a12 {
-        width: auto;
-        height: 100%;
-
-    }
-}
-
-@media only screen and (max-width: 1000px) {
     a.last-btn-a{
         font-size: 15px;
     }
     .last-btn {
+        transform: translate(-50%, -50%) rotate(90deg);
+        object-fit: cover;
         height: 80px;
         width: 150px;
         border-radius: 10px;
-        top: 65%;
-        left: 5%;
+        top: 15%;
+        left: 15%;
     }
 
-    .xobox {
-        height: 27%;
-        width: 30%;
-        border-radius: 5px;
-    }
 
-    .box {
-        height: 80%;
-        /* width: 20; */
-    }
-
-    .play-title {
-        font-size: 25px;
-
-    }
-
-    .play-detials {
-        font-size: 20px;
-    }
-
-    .play-vs {
-        font-size: 15px;
-    }
-
-    .win-img {
-        height: 25%;
-        width: 35%;
-        margin: 5px;
-        border-radius: 10px;
-    }
-
-    .win {
-        height: 70%;
+    .restart-btn {
+        height: 30%;
         width: 90%;
     }
 
-    #id1,
-    #id2,
-    #id3,
-    #id4,
-    #id5,
-    #id6,
-    #id7,
-    #id8,
-    #id9 {
-        font-size: 45px;
-    }
 
+    .win {
+        height: 80%;
+        width: 100%;
+    }
+    .win-img {
+        height: 30%;
+        width: 38%;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    
+    .play-title {
+        font-size: 25px;
+    }
+    
+    .play-detials {
+        font-size: 22px;
+    }
+    
+    .play-vs {
+      font-size: 22px;
+    }
+    
 }
+
