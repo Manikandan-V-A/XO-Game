@@ -10,10 +10,10 @@ video{
     position: fixed;
     z-index: -1;
 }
-/* .a12{
+.a12{
     position: fixed;
     z-index: 1000;
-} */
+}
 .main-main{
     display: flex;
     justify-content: center;
